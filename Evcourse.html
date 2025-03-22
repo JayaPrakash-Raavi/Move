@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOVE: Electric Vehicle Certification</title>
+  <link rel="stylesheet" href="Evcourse.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <!-- Replace these with your actual logo images -->
+      <img src="ctier-logo.png" alt="C-TIER Logo" class="logo" />
+      <img src="upskillmidsouth.png" alt="Upskill Mid-South Logo" class="logo" />
+    </div>
+    <h1>MOVE: Mobility and Operation of Vehicle Electrification</h1>
+    <p>Empowering the Future of Electric Mobility</p>
+    <button onclick="scrollToRegistration()">Apply Now</button>
+  </header>
+
+  <div class="hero">
+    <h2>EV Certification Program for Engineers, Planners & Managers</h2>
+  </div>
+
+  <section id="overview">
+    <h2>🔍 Program Overview</h2>
+    <p>The MOVE program is a comprehensive EV certification course designed to build your skills in electric mobility, infrastructure, sustainability, policy, and business strategies. It’s tailored for engineers, policymakers, entrepreneurs, and fleet managers who want to make an impact in the growing EV industry.</p>
+  </section>
+
+  <section id="curriculum">
+    <h2>📚 Program Curriculum</h2>
+    <ul>
+      <li><strong>C-EVM001:</strong> Electric Vehicle Systems and Future of Mobility</li>
+      <li><strong>C-EVM002:</strong> Powering Electric Vehicles: Infrastructure & Energy</li>
+      <li><strong>C-EVM003:</strong> Sustainable Urban Mobility & Policy Planning</li>
+      <li><strong>C-EVM004:</strong> Economics & Strategy for EV Adoption</li>
+    </ul>
+  </section>
+
+  <section id="benefits">
+    <h2>🌟 Why Choose This Program?</h2>
+    <ul>
+      <li>Learn from top EV industry experts</li>
+      <li>Hands-on training with real-world case studies</li>
+      <li>Earn a professional certificate upon completion</li>
+      <li>Boost your career in the rapidly growing EV ecosystem</li>
+      <li>Lifetime access to course materials and resources</li>
+    </ul>
+  </section>
+
+  <section id="evaluation">
+    <h2>📈 Evaluation & Certification</h2>
+    <p>Participants will be evaluated through quizzes, assignments, and a final project. A certificate of completion will be awarded to all participants scoring above 60%.</p>
+  </section>
+
+  <section id="register" class="register">
+    <h2>📝 Registration via Upskill Mid-South</h2>
+    <p><strong>Eligibility:</strong> Unemployed, underemployed, or incumbent workers living or working in the Mid-South region.</p>
+    <p><strong>Requirement:</strong> Only a State Issued Photo ID is needed.</p>
+    <p><strong>Steps to Register:</strong></p>
+    <ul>
+        <li>Select <strong>Training Provider</strong> as <b>C-TIER Center at University of Memphis</b></li>
+        <li>Select <strong>Training Course</strong> as <b>Mobility and Optimization of vehicle Electrification</b></li>
+        <li>Complete the short form (~10 mins)</li>
+    </ul>
+
+    <div class="qr-section">
+      <p>📲 Scan the QR code to register:</p>
+      <img src="registration-qr.png" alt="Registration QR Code" class="qr-image" />
+    </div>
+
+    <button onclick="window.open('https://memphis.co1.qualtrics.com/jfe/form/SV_3OQPb7vOoFY2eQ6', '_blank')">Start Registration</button>
+  </section>
+
+  <footer>
+    <p>📧 Contact us: <a href="mailto:info@moveevprogram.com">info@moveevprogram.com</a></p>
+    <p>&copy; 2025 MOVE EV Program. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToRegistration() {
+      document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
